@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy · Crank &amp; Catch</title>
+<meta name="description" content="Crank &amp; Catch collects nothing and makes no network connections. This site uses Google Analytics only if you accept cookies.">
+<meta name="theme-color" content="#1d1c18">
+<link rel="canonical" href="https://mrballistic.com/crank-and-catch/privacy/">
+<link rel="icon" href="../assets/icons/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<link rel="preload" href="../assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/consent.css">
+<!-- Google Analytics loads only after the visitor accepts; see assets/consent.js -->
+<script src="../assets/consent.js" defer></script>
+<style>
+/* Same fonts and custom properties as the main page (index.html). */
+@font-face{font-family:'Inter';font-style:normal;font-weight:400 600;font-display:swap;src:url(../assets/fonts/inter-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 500;font-display:swap;src:url(../assets/fonts/jetbrains-mono-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:500 700;font-display:swap;src:url(../assets/fonts/space-grotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+:root{
+  --page:#1d1c18; --screen-dark:#312f28; --screen-light:#b1afa8; --paper:#f5f5f0;
+  --fire:#ef5023; --fire-hover:#ff6c42; --muted:#8f8c85; --body-strong:#d6d4cd;
+  --rule:#312f28; --rule-soft:#2c2a24;
+  --fire-on-paper:#b03a12; --fire-on-paper-hover:#8a2c0c;
+  --display:'Space Grotesk',system-ui,sans-serif;
+  --body:Inter,system-ui,-apple-system,'Segoe UI',sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,Menlo,monospace;
+  --gutter:clamp(16px,4vw,40px);
+  --section-pad:clamp(64px,9vw,112px);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--screen-light);font:17px/1.6 var(--body)}
+a{color:var(--fire);text-underline-offset:3px} a:hover{color:var(--fire-hover)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--fire-hover);outline-offset:3px;border-radius:4px}
+.pix{image-rendering:pixelated}
+.wrap{max-width:760px;margin-inline:auto;padding-inline:var(--gutter)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:20px}
+.top .brand{display:block;padding:10px 12px;background:var(--screen-dark);border-radius:6px;line-height:0}
+.top .brand img{width:180px;height:auto;display:block}
+.top nav a{color:var(--screen-light);font-weight:500} .top nav a:hover{color:var(--paper)}
+main{padding-block:48px 80px}
+h1{font:700 clamp(32px,4.5vw,44px)/1.1 var(--display);letter-spacing:-0.01em;color:var(--paper);margin:0}
+.updated{font:14px var(--mono);color:var(--muted);margin:10px 0 0}
+.summary{margin:28px 0 24px;padding:18px 20px;border-radius:6px;background:var(--screen-dark);color:var(--body-strong);font-size:18px}
+h2{font:700 22px/1.3 var(--display);color:var(--paper);margin:44px 0 8px}
+main p{margin:0 0 14px}
+main strong{color:var(--paper)}
+ul{margin:0 0 14px;padding-left:1.2em} li{margin:4px 0}
+code{font:0.88em var(--mono);background:var(--screen-dark);border-radius:3px;padding:1px 5px}
+.footer{border-top:1px solid var(--rule);padding-block:32px 48px;font-size:15px;color:var(--muted)}
+.footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px 24px}
+.footer .legal{display:flex;gap:20px;align-items:center}
+</style>
+</head>
+<body>
+<header class="wrap top">
+  <a class="brand" href="../"><img class="pix" src="../assets/art/title-lcd@4x.png" alt="Crank &amp; Catch home" width="956" height="212"></a>
+  <nav><a href="../#install">How to install</a></nav>
+</header>
+<main class="wrap">
+  <h1>Privacy policy</h1>
+  <p class="updated">Last updated November 10, 2026</p>
+  <p class="summary">Crank &amp; Catch collects nothing. The game makes no network connections, and nothing you do in it is sent anywhere.</p>
+  <p>This policy covers the Crank &amp; Catch game for Playdate and this web page, mrballistic.com/crank-and-catch. Crank &amp; Catch is made by Todd Greco (mrballistic, “we,” “us” or “our”).</p>
+
+  <h2>1. The game</h2>
+  <p>Crank &amp; Catch runs entirely on your Playdate. It contains no networking code, so it never connects to the internet. Specifically, it has:</p>
+  <ul>
+    <li>No analytics, usage tracking or telemetry</li>
+    <li>No crash reporting</li>
+    <li>No accounts or sign-in</li>
+    <li>No third-party services or advertising</li>
+  </ul>
+  <p>The only thing it saves is your high score, which stays on your Playdate in the game’s own data. Deleting the game removes it.</p>
+
+  <h2>2. This website</h2>
+  <p>If you accept analytics cookies, this page uses Google Analytics to count visits and see which pages people read. Google processes that data under its own privacy policy. If you decline, Google’s code isn’t loaded at all and no analytics cookies are set. Your choice is stored in your browser so we don’t ask again, and you can change it at any time with “Cookie settings” at the bottom of the page.</p>
+  <p>The same choice applies to the other pages on mrballistic.com, so if you’ve already answered there, you won’t be asked again here.</p>
+  <p>Nothing from the game is ever sent to the website.</p>
+
+  <h2>3. Downloads and installing</h2>
+  <p>The game is downloaded from GitHub, and also available on itch.io. Installing it on a Playdate goes through your account at play.date, run by Panic. Those services have their own privacy policies; we don’t receive any personal details from them. Downloading doesn’t require an account or an email address from us.</p>
+
+  <h2>4. Children’s privacy</h2>
+  <p>Because the game collects nothing, it doesn’t knowingly collect information from children under 13 (or under the age required where you live). If you believe a child has sent us personal information, please contact us and we’ll delete it.</p>
+
+  <h2>5. Your rights</h2>
+  <p>Since the game doesn’t collect or store any personal data, there’s nothing for you to access, correct or delete. To remove website analytics, decline in “Cookie settings” and clear this site’s cookies in your browser.</p>
+
+  <h2>6. Changes to this policy</h2>
+  <p>We may update this policy from time to time. Any changes will be posted on this page with a new “Last updated” date.</p>
+
+  <h2>7. Contact</h2>
+  <p>Todd Greco (mrballistic)<br>Website: <a href="https://mrballistic.com">mrballistic.com</a><br>Contact form: <a href="https://mrballistic.com/#contact">mrballistic.com/#contact</a></p>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <span>Crank &amp; Catch by <a href="https://mrballistic.com">Todd Greco</a></span>
+    <nav class="legal" aria-label="Legal">
+      <a href="./" aria-current="page">Privacy</a>
+      <button type="button" class="consent-open" data-consent-open>Cookie settings</button>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
