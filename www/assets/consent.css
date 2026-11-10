@@ -15,6 +15,8 @@
 }
 .consent[hidden] { display: none; }
 .consent p { margin: 0; color: var(--body-strong); }
+.consent a { color: var(--fire); white-space: nowrap; text-underline-offset: 3px; }
+.consent a:hover { color: var(--fire-hover); }
 .consent-actions { display: flex; gap: 10px; margin-top: 14px; }
 .consent button {
   flex: 1 1 0; min-height: 44px; padding: 0 16px;
