@@ -1,0 +1,44 @@
+/* Analytics consent banner (see consent.js), in the page's Playdate palette:
+   a screen-dark card pinned to the bottom corner on wide screens and
+   full-width on phones. Both choices carry equal weight. Colors come from the
+   custom properties in index.html. */
+.consent {
+  position: fixed; z-index: 100;
+  right: 24px; bottom: 24px; left: auto;
+  max-width: 400px;
+  padding: 20px 20px 18px;
+  background: var(--screen-dark); color: var(--paper);
+  border: 1px solid var(--rule-soft); border-radius: 6px;
+  box-shadow: 0 20px 40px -18px rgba(0, 0, 0, 0.7);
+  font: 15px/1.5 var(--body);
+  animation: consent-in 180ms ease-out;
+}
+.consent[hidden] { display: none; }
+.consent p { margin: 0; color: var(--body-strong); }
+.consent-actions { display: flex; gap: 10px; margin-top: 14px; }
+.consent button {
+  flex: 1 1 0; min-height: 44px; padding: 0 16px;
+  font: 600 16px/1 var(--display);
+  color: var(--paper); background: var(--page);
+  border: 1px solid var(--muted); border-radius: 6px;
+  cursor: pointer;
+}
+.consent button:hover { border-color: var(--fire-hover); color: var(--paper); }
+@keyframes consent-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .consent { animation: none; }
+}
+@media (max-width: 599px) {
+  .consent { right: 12px; left: 12px; bottom: 12px; max-width: none; }
+}
+
+/* Footer control that reopens the banner, styled like the footer's links. */
+.consent-open {
+  display: inline; padding: 0;
+  font: inherit; color: var(--fire); background: none; border: 0; cursor: pointer;
+  text-decoration: underline; text-underline-offset: 3px;
+}
+.consent-open:hover { color: var(--fire-hover); }
